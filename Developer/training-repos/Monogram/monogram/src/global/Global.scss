@@ -1,0 +1,129 @@
+:root {
+  --purple: #1a2456;
+  --peach: #ff8b68;
+  --white: #f0efed;
+  --black: #080b1b;
+  --text-secondary: #efc2b3;
+  --menu-font: #212529;
+  --menu-hover: #e9ecef;
+  }
+  
+  *,
+  *::before,
+  *::after {
+  box-sizing: border-box;
+  }
+  
+  body{
+    background-color: var(--white);
+    color: var(--purple);
+    font-family: prompt,sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    
+    &:hover {
+      color: var(--peach);
+    }
+  }
+
+  //Button Styles 
+  .button {
+    background: var(--purple);
+    color: var(--white);
+    padding-inline: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    border-radius: 45px;
+    height: 2rem;
+  }
+
+
+  // Heading styles
+  h1 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: prompt,sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+
+  }
+
+//Text styles 
+
+p {
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+}
+  
+  /* Footer Styles */
+  
+  @media (min-width: 1024px){
+    .footer__nav{
+    max-height: 27rem;
+    }
+  }
+  
+  @media (min-width: 1024px){
+    .footer__logos__starform img{
+      width: 8.25rem;
+    }
+  }
+  
+  @media (min-width: 1280px){
+    .footer__menu__contact {
+      font-size: 1.875rem;
+    }
+  }
+  
+  .footer__menu__list{
+    height: calc(1.25rem * 5 + 6.7rem);
+  }
+  
+  .footer__copyright__logo svg{
+    height: 11px;
+    width: 82px;
+  }
+  
+  .footer__copyright__logo  :hover{
+    color: var(--gold);
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+
+    @media only screen and (min-width: 1200px) {
+      max-width: 1140px;
+    }
+    @media only screen and (min-width: 920px) {
+      max-width: 960px;
+    }
+    @media only screen and (min-width: 768px) {
+      max-width: 720px;
+    }
+    @media only screen and (min-width: 576px) {
+      max-width: 540px;
+    }
+  }
+
+  //Utilites 
+  .d-block {
+    display: block !important;
+  } 
+  

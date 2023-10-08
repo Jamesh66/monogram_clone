@@ -1,0 +1,117 @@
+.nav__wrapper{
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--purple);
+    width: 100%;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    padding: 0.5em;
+
+    .nav__logo {
+      svg {
+        display: flex;
+        height: 2.37rem;
+        color: var(--text-secondary);
+      }
+    }
+
+    .nav__items {
+      display: flex;
+      align-items: center;
+      font-size: 0.825rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      padding: 0.5rem;
+      font-size: 12px;
+
+      :last-child {
+        margin-right: 0.5rem;
+      }
+
+      .nav__item {
+        margin-left: 1rem;
+        padding-inline: 0.5rem;
+
+        @media (max-width: 1005px) {
+          display: none;
+        }
+
+        svg {
+          display: flex;
+          height: 1.5rem;
+          color: var(--text-secondary);
+        }
+      }
+    }
+
+    .nav__dropdown {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+
+      a {
+        color: var( --menu-font);
+      }
+
+      &--right {
+        .nav__dropdown__content {
+          right: 0;
+          min-width: unset;
+        }
+      }
+      
+      &:hover {
+        .nav__dropdown__content{
+          display: block;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+
+      .nav__dropdown__button {
+
+        &:hover{
+          color: var(--peach);
+        }
+        &::after {
+          content: url(../../assets/svg/down-arrow.svg);
+          display: inline-block;
+          height: 0.5rem;
+          width: 0.5rem;
+          align-items: center;
+
+          svg {
+            color: var(--text-secondary);
+          }
+        }
+      }
+
+      .nav__dropdown__content {
+        display: none;
+        position: absolute;
+        background: var(--white);
+        list-style: none;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+        padding: 0.5rem 0;
+        z-index: 1;
+        margin: 0;
+        white-space: nowrap;
+  
+        .nav__dropdown__item{
+          padding: 0.25rem 1rem;
+
+          &:hover {
+            background: var(--menu-hover);
+          }
+        }
+      }
+    }
+  }
+}
