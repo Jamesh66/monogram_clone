@@ -1,13 +1,22 @@
 .featuredCta {
   width: 100%;
-  height: 38.3rem;
   display: flex;
-  background-image: url(../../assets/images/shop-banner-module-1920.webp);
 
+  .featuredCta__content {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    text-align: center;
 
-  @media screen {
-    
+    @media (max-width: 768px) {
+      padding-top: unset;
+    }
   }
-  background-size: cover;
 
+  img {
+    width: 100%;
+  }
 }

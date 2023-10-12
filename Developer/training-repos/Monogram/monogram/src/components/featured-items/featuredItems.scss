@@ -34,18 +34,6 @@
       opacity: 0;
       transition: opacity .2s;
     }
-    .featured-item-tag {
-      position: absolute;
-      background: var(--peach);
-      padding-inline: 1rem;
-      padding-block: 0.15rem;
-      text-transform: uppercase;
-      font-weight: 600;
-      right: 0;
-      top: 2rem;
-      font-size: 0.75rem;
-      z-index: 1;
-    }
     .featured-item__content {
       display: flex;
       justify-content: space-between;

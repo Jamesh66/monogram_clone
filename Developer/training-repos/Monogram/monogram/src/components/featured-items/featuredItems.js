@@ -50,7 +50,7 @@ const FeaturedItems = () => {
     <div className='featured-items'>
       {slides.map((slides, index) => (
       <div className="featured-item">
-        <div className="featured-item-tag">Pre-order</div>
+        <div className="shop-item-tag">Pre-order</div>
         <picture className="featured-item-image">
           <source />
           <img src={slides.image} alt="Mini Console" />

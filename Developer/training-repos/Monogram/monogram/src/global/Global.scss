@@ -46,6 +46,8 @@
     align-items: center;
     border-radius: 45px;
     height: 2rem;
+    width: fit-content;
+
   }
 
 
@@ -127,3 +129,15 @@ p {
     display: block !important;
   } 
   
+  .shop-item-tag {
+    position: absolute;
+    background: var(--peach);
+    padding-inline: 1rem;
+    padding-block: 0.15rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    right: 0;
+    top: 2rem;
+    font-size: 0.75rem;
+    z-index: 1;
+  }
