@@ -1,3 +1,5 @@
+//Global Style
+import React, { useState } from "react";
 import './App.css';
 //Import SASS
 import './components/nav/Nav.scss'
@@ -17,12 +19,16 @@ import FeaturedCta from './components/featured-cta/featuredCta';
 import Shop from './components/shop/shop';
 
 
+import data from "./productData/featuredProductData";
+
 function App() {
+  //State
+  const [featuredProductData] = useState(data());
   return (
     <div className="App">
       <Nav/>
       <Banner/>
-      <FeaturedItems/>
+      <FeaturedItems featuredProductData={featuredProductData}/>
       <FeaturedCta/>
       <Shop/>
     </div>

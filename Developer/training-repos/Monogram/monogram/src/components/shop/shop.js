@@ -12,7 +12,6 @@ const shop = () => {
       image: `${masterConsoleUnboxed750}`,
       hoverImage: `${photoConsoleUnboxed720}`,
       title: 'Monogram Carry Case',
-      subTitle: 'Ideal for everyday shortcuts. Adaptable to any workflow.',
       price: '$249',
       link: '/link',
     },
@@ -53,9 +52,9 @@ const shop = () => {
         </picture>
           <div className="shop__product__content">
             <div className="shop__product__inner">
-              <h3 className="shop__product__title">MONOGRAM CARRYING CASE</h3>
+              <h3 className="shop__product__title">{items.title}</h3>
             </div>
-            <p>$59</p>
+            <p>{items.price}</p>
             <a href={masterConsoleBoxed750} className="button shop__product__button">Shop Now</a>
           </div>
       </div>
