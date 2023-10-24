@@ -15,7 +15,7 @@ const FeaturedItems = ({featuredProductData}) => {
           <div className="featured-item__content">
             <div className="featured-item__content__inner">
               <h3 className="featured-item__content__title">{item.title}</h3>
-              <p>{item.subTitle}.</p>
+              <p>{item.subTitle}</p>
             </div>
             <p>{item.price}</p>
             <a href={item.link} className="button featured-item__button">Shop Now</a>
