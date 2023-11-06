@@ -19,18 +19,21 @@ import FeaturedCta from './components/featured-cta/featuredCta';
 import Shop from './components/shop/shop';
 
 
-import data from "./productData/featuredProductData";
+import Data from "./productData/featuredProductData";
+import Data from "./productData/shopProductData"
 
 function App() {
   //State
-  const [featuredProductData] = useState(data());
+  const [featuredProductData] = useState(Data());
+  const [shopProductData] = useState(Data());
+
   return (
     <div className="App">
       <Nav/>
       <Banner/>
       <FeaturedItems featuredProductData={featuredProductData}/>
       <FeaturedCta/>
-      <Shop/>
+      <Shop shopProductData={shopProductData}/>
     </div>
   );
 }
